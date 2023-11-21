@@ -1,0 +1,58 @@
+.homescreen__banner > img {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 60px;
+} 
+
+.homescreen__banner {
+    position: relative;
+    text-align: center;
+  }
+  
+  .homescreen__content {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Adjust text color as needed */
+  }
+  
+  .homescreen__content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem; 
+    font-family: 'Philosopher', sans-serif;
+  }
+  
+  .shopnow {
+    background-color: #dd4545;
+    color: #f5eedcff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+.homescreen__products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1232px) {
+    .homescreen__products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 950px) {
+    .homescreen__products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .homescreen__products {
+        grid-template-columns: 1fr;
+    }
+}

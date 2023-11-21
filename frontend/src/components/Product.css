@@ -1,0 +1,104 @@
+.product {
+    width: 350px;
+    padding: 1rem;
+    background-color: rgba(221, 69, 69, 0.8);
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0,0, 0.4);
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+.product > img {
+    height: 200px;
+}
+
+.product__info > p {
+    margin-bottom: 8px;
+}
+
+.info__name {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #f5eedcff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.info__price {
+    font-weight: bold;
+    font-family: 'Alata', sans-serif;
+    color: #f5eedcff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.info__button {
+    display: block;
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+    background-color: #f5eedcff;
+    color: #dd4545;
+    padding: 8px 16px;
+    font-family: 'Alata', sans-serif;
+    border-radius: 5px;
+    margin: 0rem auto;
+    margin-top: 0.8rem;
+}
+
+.info__button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 1232px) {
+    .product {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .product {
+        width: 330px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .product {
+        width: 300px;
+    }
+}
+
+@media (max-width: 950px) {
+    .product {
+        width: 400px;
+    }
+}
+
+@media (max-width: 830px) {
+    .product {
+        width: 330px;
+    }
+}
+
+@media (max-width: 700px) {
+    .product {
+        width: 290px;
+    }
+}
+
+@media (max-width: 630px) {
+    .product {
+        width: 290px;
+    }
+}
+
+@media (max-width: 400px) {
+    .product {
+        width: 250px;
+    }
+}

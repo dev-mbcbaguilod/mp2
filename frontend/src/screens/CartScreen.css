@@ -1,0 +1,78 @@
+.cartscreen {
+    display: flex;
+    max-width: 1300px;
+    margin: 2rem auto;
+    font-family: 'Alata', sans-serif;
+}
+
+.cartscreen h2 {
+    margin-bottom: 1rem;
+    font-family: 'Philosopher', sans-serif;
+    color:#dd4545;
+    font-size: 1.8rem;
+}
+
+.cartscreen__left {
+    flex: 0.7;
+    margin-right: 1rem;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.cartscreen__right {
+    flex: 0.3;
+    background-color: #dd4545;
+    color: #f5eedcff;
+    box-shadow: 0 1px 4px rgba (0, 0, 0, 0.4);
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.cartscreen__right div {
+    border-bottom: 1px solid rgba(245, 238, 220, 0.2);
+    padding: 1rem;
+}
+
+.cartscreen__right div:last-child {
+    border: none;
+}
+
+.cartscreen__info p {
+    padding: 8px;
+}
+
+.cartscreen__right button {
+    background-color: #f5eedcff;
+    color: #dd4545;
+    padding: 10px 16px;
+    font-family: 'Alata', sans-serif;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.cartscreen__right button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 1320px) {
+    .cartscreen {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 960px) {
+    .cartscreen {
+        max-width: 800px;
+        flex-direction: column;
+    }
+
+    .cartscreen__left {
+        margin: 0;
+    }
+
+    .cartscreen__right {
+        margin: 1rem;
+    }
+}
